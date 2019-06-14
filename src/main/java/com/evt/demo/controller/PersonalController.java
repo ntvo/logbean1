@@ -22,7 +22,7 @@ public class PersonalController {
     {
 		List<PersonalInfo> PersonalInfoList = new ArrayList<PersonalInfo>();
 		PersonalInfoList.add(new PersonalInfo(1,"nathan","test","test@gmail.com"));
-		dexLogger.logLevel(DexLogger.INFO,this.getClass().toString(),"This is a INFO log testing message");
+		dexLogger.logLevel(DexLogger.INFO,this.getClass(),"This is a INFO log testing message");
 		return PersonalInfoList;
     }
 

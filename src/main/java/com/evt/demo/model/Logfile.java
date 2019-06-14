@@ -28,4 +28,25 @@ public class Logfile {
 		}
 	}
 
+	public void logLevel(DexLogger dexLogger, Class<?> class1, String txt) {
+		switch (dexLogger) {
+		case INFO:
+			logger.info(class1.toString() + " : " + txt);
+			break;
+		case DEBUG:
+			logger.debug(class1.toString()  + " : " + txt);
+			break;
+		case WARN:
+			logger.warn(class1.toString()  + " : " + txt);
+			break;
+		case TRACE:
+			logger.trace(class1.toString()  + " : " + txt);
+			break;
+		case ERROR:
+			logger.error(class1.toString()  + " : " + txt);
+			break;
+		}
+		
+	}
+
 }

@@ -10,7 +10,7 @@ public class DexLogger  {
 
 
 
-	public void dexlogger(DexLoggerLevel dexLoggerlevel, Class<?> class1, String txt) {
+	public void dexlogger(LogLevel dexLoggerlevel, Class<?> class1, String txt) {
 		switch (dexLoggerlevel) {
 		case INFO:
 			logger.info(class1.toString() + " : " + txt);
